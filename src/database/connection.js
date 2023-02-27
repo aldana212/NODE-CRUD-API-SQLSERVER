@@ -2,8 +2,8 @@ import sql from "mssql";
 
 // config los datos de la base de datos para conectar
 const dbSettings  ={
-   user: 'Aldana',
-   password: '1094884731',
+   user: '',
+   password: '',
    server: 'localhost',
    database: 'webstore',
    options: {

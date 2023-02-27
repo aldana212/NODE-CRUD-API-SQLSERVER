@@ -9,6 +9,9 @@ const app = express();
 
 //settings para congigurar el port
 app.set('port', config.port)
+// middleware 
+app.use(express.json())
+app.use(express.urlencoded({extends: false}))
 
 app.use(productsRoutes)
 
