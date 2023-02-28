@@ -2,8 +2,8 @@ import sql from "mssql";
 
 // config los datos de la base de datos para conectar
 const dbSettings  ={
-   user: '',
-   password: '',
+   user: 'Aldana',
+   password: 'aldana123',
    server: 'localhost',
    database: 'webstore',
    options: {
@@ -15,7 +15,7 @@ const dbSettings  ={
 
 export async function getConnection(){
     try {
-        const pool = await sql.connect(dbSettings );
+        const pool = await sql.connect(dbSettings);
         return pool;
     } catch (error) {
         console.log(error);
