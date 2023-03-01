@@ -5,11 +5,11 @@ const router = Router()
 
 router.get('/products', getProducts)
 
+router.get('/products/count', getTotalProducts)
+
 router.get('/products/:id', getProductsById)
 
 router.post('/products', CreateNewProducts)
-
-router.get('/products/count', getTotalProducts)
 
 router.delete('/products/:id', deleteProductsById)
 
